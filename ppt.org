@@ -1,6 +1,6 @@
 #+OPTIONS: num:nil toc:nil
-# #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+REVEAL_ROOT: file:///home/allen/Workspaces/reveal.js
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+# #+REVEAL_ROOT: file:///home/allen/Workspaces/reveal.js
 #+REVEAL_HLEVEL: 1
 #+REVEAL_TITLE_SLIDE: %t Final Master Project %s test
 # #+Title: Title of Your Talk
