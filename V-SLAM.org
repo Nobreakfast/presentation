@@ -14,10 +14,15 @@
 ** Background
 
 + =traditional methods= :
-black tapes, magnetic tapes, QR code, ...
+  - black tapes,
+  - magnetic tapes,
+  - QR code,
+  - ...
 
 + =new technology= :
-radar, visual reference, ...
+  - radar,
+  - visual,
+  - ...
 
 ** Objective
 
@@ -85,7 +90,11 @@ file:fig1/at.png
 - =Software= :
   1) Base: ORB-SLAM2.
   2) Other: apply the radar to the system.
+#+reveal: split
 - =Task= :
   1) Use the =Main= AGV map the lab room.
   2) Ask the =Main= From one point to another.
   3) The =Second= AGV use april-tag follow the =Main= AGV.
+
+* Thank You Very Much
+Any Questions?

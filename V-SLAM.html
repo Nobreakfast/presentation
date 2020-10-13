@@ -34,57 +34,61 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgd1dbb6f">Introduction</a>
+<li><a href="#/slide-orgcfc604b">Introduction</a>
 <ul>
-<li><a href="#/slide-orgc144202">Background</a></li>
-<li><a href="#/slide-org68d0323">Objective</a></li>
+<li><a href="#/slide-org34d11f0">Background</a></li>
+<li><a href="#/slide-org36a5803">Objective</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org68169fe">Visual Simultaneous Localization and Mapping</a>
+<li><a href="#/slide-org711b741">Visual Simultaneous Localization and Mapping</a>
 <ul>
-<li><a href="#/slide-org93b6745">Structure of VSLAM</a></li>
-<li><a href="#/slide-org0ecb7f4">Type of camera</a></li>
+<li><a href="#/slide-orga089345">Structure of VSLAM</a></li>
+<li><a href="#/slide-org724b22d">Type of camera</a></li>
 </ul>
 </li>
-<li><a href="#/slide-org052ac08">ORB-SLAM (Oriented Fast and Rotated Brief)</a></li>
-<li><a href="#/slide-orgdeb6d57">April-tag</a></li>
-<li><a href="#/slide-org2965f71">This Final Master Project</a></li>
+<li><a href="#/slide-orgc93e533">ORB-SLAM (Oriented Fast and Rotated Brief)</a></li>
+<li><a href="#/slide-org7bf1dea">April-tag</a></li>
+<li><a href="#/slide-org82d0d79">This Final Master Project</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgd1dbb6f">
-<h2 id="orgd1dbb6f">Introduction</h2>
-<div class="outline-text-2" id="text-orgd1dbb6f">
+<section id="slide-orgcfc604b">
+<h2 id="orgcfc604b">Introduction</h2>
+<div class="outline-text-2" id="text-orgcfc604b">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgc144202">
-<h3 id="orgc144202">Background</h3>
+<section id="slide-org34d11f0">
+<h3 id="org34d11f0">Background</h3>
 <ul>
-<li><code>traditional methods</code> :</li>
-
-</ul>
-<p>
-black tapes, magnetic tapes, QR code, &#x2026;
-</p>
-
+<li><code>traditional methods</code> :
 <ul>
-<li><code>new technology</code> :</li>
+<li>black tapes,</li>
+<li>magnetic tapes,</li>
+<li>QR code,</li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+<li><code>new technology</code> :
+<ul>
+<li>radar,</li>
+<li>visual,</li>
+<li>&#x2026;</li>
+
+</ul></li>
 
 </ul>
-<p>
-radar, visual reference, &#x2026;
-</p>
 
 </section>
 </section>
 <section>
-<section id="slide-org68d0323">
-<h3 id="org68d0323">Objective</h3>
+<section id="slide-org36a5803">
+<h3 id="org36a5803">Objective</h3>
 <p>
 This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of tasks with other AGV.
 </p>
@@ -92,15 +96,15 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </section>
 </section>
 <section>
-<section id="slide-org68169fe">
-<h2 id="org68169fe">Visual Simultaneous Localization and Mapping</h2>
-<div class="outline-text-2" id="text-org68169fe">
+<section id="slide-org711b741">
+<h2 id="org711b741">Visual Simultaneous Localization and Mapping</h2>
+<div class="outline-text-2" id="text-org711b741">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-org93b6745">
-<h3 id="org93b6745">Structure of VSLAM</h3>
+<section id="slide-orga089345">
+<h3 id="orga089345">Structure of VSLAM</h3>
 <ul>
 <li>Visual Odometry</li>
 <li>Optimization</li>
@@ -112,13 +116,13 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </section>
 </section>
 <section>
-<section id="slide-org0ecb7f4">
-<h3 id="org0ecb7f4">Type of camera</h3>
-<div class="outline-text-3" id="text-org0ecb7f4">
+<section id="slide-org724b22d">
+<h3 id="org724b22d">Type of camera</h3>
+<div class="outline-text-3" id="text-org724b22d">
 </div>
 </section>
-<section id="slide-org78487e3">
-<h4 id="org78487e3">monocular</h4>
+<section id="slide-org1474197">
+<h4 id="org1474197">monocular</h4>
 
 <div class="figure">
 <p><img src="fig1/monocular.png" alt="monocular.png" width="400px" />
@@ -126,8 +130,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-orgbdf05c4">
-<h4 id="orgbdf05c4">stereo</h4>
+<section id="slide-org6112a61">
+<h4 id="org6112a61">stereo</h4>
 
 <div class="figure">
 <p><img src="fig1/stereo.png" alt="stereo.png" width="800px" />
@@ -135,8 +139,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-org6454c75">
-<h4 id="org6454c75">RGB-D</h4>
+<section id="slide-org179fb8d">
+<h4 id="org179fb8d">RGB-D</h4>
 
 <div class="figure">
 <p><img src="fig1/rgbd.png" alt="rgbd.png" width="800px" />
@@ -144,8 +148,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-org733f1fd">
-<h4 id="org733f1fd">Depth Image</h4>
+<section id="slide-orgc327533">
+<h4 id="orgc327533">Depth Image</h4>
 
 <div class="figure">
 <p><img src="fig1/depth_figure.png" alt="depth_figure.png" width="800px" />
@@ -155,8 +159,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </section>
 </section>
 <section>
-<section id="slide-org052ac08">
-<h2 id="org052ac08">ORB-SLAM (Oriented Fast and Rotated Brief)</h2>
+<section id="slide-orgc93e533">
+<h2 id="orgc93e533">ORB-SLAM (Oriented Fast and Rotated Brief)</h2>
 <ul>
 <li>feature-based SLAM system.</li>
 <li>support monocular, stereo and RGBD camera.</li>
@@ -171,7 +175,7 @@ have three parallel thread: tracking, local mapping and loop closing.
 </p>
 
 </section>
-<section id="slide-orgaf73c6d-split"></li>
+<section id="slide-org42ce4c5-split"></li>
 
 </ul>
 
@@ -183,20 +187,19 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-orgdeb6d57">
-<h2 id="orgdeb6d57">April-tag</h2>
+<section id="slide-org7bf1dea">
+<h2 id="org7bf1dea">April-tag</h2>
 
 <div class="figure">
 <p><img src="fig1/at.png" alt="at.png" width="800px" />
 </p>
 </div>
 
-
 </section>
 </section>
 <section>
-<section id="slide-org2965f71">
-<h2 id="org2965f71">This Final Master Project</h2>
+<section id="slide-org82d0d79">
+<h2 id="org82d0d79">This Final Master Project</h2>
 <ul>
 <li><code>Hardware</code> :
 <ol>
