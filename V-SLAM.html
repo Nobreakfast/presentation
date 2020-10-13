@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Haocheng Zhao)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/solarized.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><p>Scheduling Optimization with Visual References</p>
+<p>in Multi-AGV Coordination</p>
+<p>Haocheng Zhao</p> <p><a href="mailto:Haocheng.Zhao19@student.xjtlu.edu.cn">Haocheng.Zhao19@student.xjtlu.edu.cn</a></p>
+</section>
+<section id="table-of-contents"><div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgd1dbb6f">Introduction</a>
+<ul>
+<li><a href="#/slide-orgc144202">Background</a></li>
+<li><a href="#/slide-org68d0323">Objective</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org68169fe">Visual Simultaneous Localization and Mapping</a>
+<ul>
+<li><a href="#/slide-org93b6745">Structure of VSLAM</a></li>
+<li><a href="#/slide-org0ecb7f4">Type of camera</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org052ac08">ORB-SLAM (Oriented Fast and Rotated Brief)</a></li>
+<li><a href="#/slide-orgdeb6d57">April-tag</a></li>
+<li><a href="#/slide-org2965f71">This Final Master Project</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-orgd1dbb6f">
+<h2 id="orgd1dbb6f">Introduction</h2>
+<div class="outline-text-2" id="text-orgd1dbb6f">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgc144202">
+<h3 id="orgc144202">Background</h3>
+<ul>
+<li><code>traditional methods</code> :</li>
+
+</ul>
+<p>
+black tapes, magnetic tapes, QR code, &#x2026;
+</p>
+
+<ul>
+<li><code>new technology</code> :</li>
+
+</ul>
+<p>
+radar, visual reference, &#x2026;
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org68d0323">
+<h3 id="org68d0323">Objective</h3>
+<p>
+This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of tasks with other AGV.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org68169fe">
+<h2 id="org68169fe">Visual Simultaneous Localization and Mapping</h2>
+<div class="outline-text-2" id="text-org68169fe">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org93b6745">
+<h3 id="org93b6745">Structure of VSLAM</h3>
+<ul>
+<li>Visual Odometry</li>
+<li>Optimization</li>
+<li>Loop Closure</li>
+<li>Mapping</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0ecb7f4">
+<h3 id="org0ecb7f4">Type of camera</h3>
+<div class="outline-text-3" id="text-org0ecb7f4">
+</div>
+</section>
+<section id="slide-org78487e3">
+<h4 id="org78487e3">monocular</h4>
+
+<div class="figure">
+<p><img src="fig1/monocular.png" alt="monocular.png" width="400px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgbdf05c4">
+<h4 id="orgbdf05c4">stereo</h4>
+
+<div class="figure">
+<p><img src="fig1/stereo.png" alt="stereo.png" width="800px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6454c75">
+<h4 id="org6454c75">RGB-D</h4>
+
+<div class="figure">
+<p><img src="fig1/rgbd.png" alt="rgbd.png" width="800px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org733f1fd">
+<h4 id="org733f1fd">Depth Image</h4>
+
+<div class="figure">
+<p><img src="fig1/depth_figure.png" alt="depth_figure.png" width="800px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org052ac08">
+<h2 id="org052ac08">ORB-SLAM (Oriented Fast and Rotated Brief)</h2>
+<ul>
+<li>feature-based SLAM system.</li>
+<li>support monocular, stereo and RGBD camera.</li>
+<li>use ORB feature.
+<ul>
+<li>Fast feature to find the features.</li>
+<li>BRIEF descriptor to store the pixel around the features.</li>
+
+</ul></li>
+<li><p>
+have three parallel thread: tracking, local mapping and loop closing.
+</p>
+
+</section>
+<section id="slide-orgaf73c6d-split"></li>
+
+</ul>
+
+<div class="figure">
+<p><img src="fig1/orb.png" alt="orb.png" width="800px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdeb6d57">
+<h2 id="orgdeb6d57">April-tag</h2>
+
+<div class="figure">
+<p><img src="fig1/at.png" alt="at.png" width="800px" />
+</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org2965f71">
+<h2 id="org2965f71">This Final Master Project</h2>
+<ul>
+<li><code>Hardware</code> :
+<ol>
+<li>Personal Laptop for VSLAM system.</li>
+<li>Cars from team.</li>
+<li>Camera: MYNT s1040 Stereo.</li>
+
+</ol></li>
+<li><code>Software</code> :
+<ol>
+<li>Base: ORB-SLAM2.</li>
+<li>Other: apply the radar to the system.</li>
+
+</ol></li>
+<li><code>Task</code> :
+<ol>
+<li>Use the <code>Main</code> AGV map the lab room.</li>
+<li>Ask the <code>Main</code> From one point to another.</li>
+<li>The <code>Second</code> AGV use april-tag follow the <code>Main</code> AGV.</li>
+
+</ol></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+transition: 'concave',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

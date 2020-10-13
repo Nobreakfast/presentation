@@ -1,0 +1,91 @@
+#+OPTIONS: toc:2 num:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+# #+REVEAL_ROOT: file:///home/allen/Workspaces/reveal.js
+#+reveal_theme: solarized
+#+REVEAL_INIT_OPTIONS: transition: 'concave'
+#+reveal_hlevel: 2
+#+reveal_title_slide:<p>Scheduling Optimization with Visual References</p>
+#+reveal_title_slide:<p>in Multi-AGV Coordination</p>
+#+reveal_title_slide:<p>%a</p> <p>%e</p>
+# #+reveal: split
+
+* Introduction
+
+** Background
+
++ =traditional methods= :
+black tapes, magnetic tapes, QR code, ...
+
++ =new technology= :
+radar, visual reference, ...
+
+** Objective
+
+This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of tasks with other AGV.
+
+* Visual Simultaneous Localization and Mapping
+
+** Structure of VSLAM
+
++ Visual Odometry
++ Optimization
++ Loop Closure
++ Mapping
+
+** Type of camera
+*** monocular
+#+attr_html: :width 400px
+#+attr_latex: :width 400px
+file:fig1/monocular.png
+# #+reveal: split
+
+*** stereo
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/stereo.png
+# #+reveal: split
+
+*** RGB-D
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/rgbd.png
+# #+reveal: split
+
+*** Depth Image
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/depth_figure.png
+
+* ORB-SLAM (Oriented Fast and Rotated Brief)
+
+- feature-based SLAM system.
+- support monocular, stereo and RGBD camera.
+- use ORB feature.
+  - Fast feature to find the features.
+  - BRIEF descriptor to store the pixel around the features.
+- have three parallel thread: tracking, local mapping and loop closing.
+
+  #+reveal: split
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/orb.png
+
+* April-tag
+
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/at.png
+
+* This Final Master Project
+
+- =Hardware= :
+  1) Personal Laptop for VSLAM system.
+  2) Cars from team.
+  3) Camera: MYNT s1040 Stereo.
+- =Software= :
+  1) Base: ORB-SLAM2.
+  2) Other: apply the radar to the system.
+- =Task= :
+  1) Use the =Main= AGV map the lab room.
+  2) Ask the =Main= From one point to another.
+  3) The =Second= AGV use april-tag follow the =Main= AGV.

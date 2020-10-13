@@ -1,0 +1,76 @@
+#+OPTIONS: toc:2 num:nil
+# #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_ROOT: file:///home/allen/Workspaces/reveal.js
+#+reveal_theme: solarized
+#+REVEAL_INIT_OPTIONS: transition: 'concave'
+#+reveal_hlevel: 1
+#+reveal_title_slide:<p>Scheduling Optimization with Visual References</p>
+#+reveal_title_slide:<p>in Multi-AGV Coordination</p>
+#+reveal_title_slide:<p>%a</p> <p>%e</p>
+# #+reveal: split
+
+* Introduction
+
+** Objective
+
+* Automated Guided Vehicle
+
+** Localization and Navigation Methods
+
+*** Guide tape/Magnetic tape
+#+attr_html: :width 500px
+#+attr_latex: :width 500px
+file:fig1/blackline.jpeg
+
+*** Inertial
+#+attr_html: :width 500px
+#+attr_latex: :width 500px
+file:fig1/inertial.png
+
+*** QR code/April tag
+#+attr_html: :width 200px
+#+attr_latex: :width 200px
+file:fig1/qr.png
+#+attr_html: :width 200px
+#+attr_latex: :width 200px
+file:fig1/aptag.jpg
+
+*** RFID
+#+attr_html: :width 400px
+#+attr_latex: :width 400px
+file:fig1/rfid.png
+
+*** Visual
+**** monocular
+#+attr_html: :width 400px
+#+attr_latex: :width 400px
+file:fig1/monocular.png
+#+reveal: split
+
+**** stereo
+#+attr_html: :width 400px
+#+attr_latex: :width 400px
+file:fig1/stereo.png
+#+reveal: split
+
+**** RGB-D
+#+attr_html: :width 400px
+#+attr_latex: :width 400px
+file:fig1/rgbd.png
+#+reveal: split
+
+**** Depth Image
+#+attr_html: :width 200px
+#+attr_latex: :width 200px
+file:fig1/1305031458.291664.png
+#+attr_html: :width 200px
+#+attr_latex: :width 200px
+file:fig1/1305031458.277447.png
+
+*** Laser
+#+attr_html: :width 500px
+#+attr_latex: :width 500px
+file:fig1/laser.png
+
+
+** A

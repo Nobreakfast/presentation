@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Haocheng Zhao)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/allen/Workspaces/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/allen/Workspaces/reveal.js/dist/theme/solarized.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/allen/Workspaces/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><p>Scheduling Optimization with Visual References</p>
+<p>in Multi-AGV Coordination</p>
+<p>Haocheng Zhao</p> <p><a href="mailto:Haocheng.Zhao19@student.xjtlu.edu.cn">Haocheng.Zhao19@student.xjtlu.edu.cn</a></p>
+</section>
+<section id="table-of-contents"><div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org2e71f70">1. Introduction</a>
+<ul>
+<li><a href="#/slide-orga7f10be">1.1. Objective</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org843a6ac">2. Automated Guided Vehicle</a>
+<ul>
+<li><a href="#/slide-orge0a1041">2.1. Localization and Navigation Methods</a></li>
+<li><a href="#/slide-org3ca5227">2.2. s</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org2e71f70">
+<h2 id="org2e71f70"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-orga7f10be">
+<h3 id="orga7f10be"><span class="section-number-3">1.1</span> Objective</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org843a6ac">
+<h2 id="org843a6ac"><span class="section-number-2">2</span> Automated Guided Vehicle</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-orge0a1041">
+<h3 id="orge0a1041"><span class="section-number-3">2.1</span> Localization and Navigation Methods</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</section>
+<section id="slide-orged2eb7b">
+<h4 id="orged2eb7b"><span class="section-number-4">2.1.1</span> Guide tape/Magnetic tape</h4>
+
+</section>
+<section id="slide-org2a8fefc">
+<h4 id="org2a8fefc"><span class="section-number-4">2.1.2</span> Inertial</h4>
+
+<div class="figure">
+<p><img src="fig1/inertial.png" alt="inertial.png" width="500px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc01fe3b">
+<h4 id="orgc01fe3b"><span class="section-number-4">2.1.3</span> QR code/April tag</h4>
+
+<div class="figure">
+<p><img src="fig1/qr.png" alt="qr.png" width="200px" />
+</p>
+</div>
+
+<div class="figure">
+<p><img src="fig1/aptag.jpg" alt="aptag.jpg" width="200px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org79e645d">
+<h4 id="org79e645d"><span class="section-number-4">2.1.4</span> RFID</h4>
+
+<div class="figure">
+<p><img src="fig1/rfid.png" alt="rfid.png" width="400px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org2ac2687">
+<h4 id="org2ac2687"><span class="section-number-4">2.1.5</span> Visual</h4>
+<div class="outline-text-4" id="text-2-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org2b6213c"></a>monocular<br />
+<div class="figure">
+<p><img src="fig1/monocular.png" alt="monocular.png" width="400px" />
+</p>
+</div>
+</section>
+<section id="slide-org2b6213c-split">
+</li>
+
+<li><a id="orga5f444a"></a>stereo<br />
+<div class="figure">
+<p><img src="fig1/stereo.png" alt="stereo.png" width="400px" />
+</p>
+</div>
+</section>
+<section id="slide-orga5f444a-split">
+</li>
+
+<li><a id="orgb86493c"></a>RGB-D<br />
+<div class="figure">
+<p><img src="fig1/rgbd.png" alt="rgbd.png" width="400px" />
+</p>
+</div>
+</section>
+<section id="slide-orgb86493c-split">
+</li>
+
+<li><a id="orge2e557f"></a>Depth Image<br />
+<div class="figure">
+<p><img src="fig1/1305031458.291664.png" alt="1305031458.291664.png" width="200px" />
+</p>
+</div>
+
+<div class="figure">
+<p><img src="fig1/1305031458.277447.png" alt="1305031458.277447.png" width="200px" />
+</p>
+</div>
+</li>
+</ol>
+
+</section>
+<section id="slide-orgc24a728">
+<h4 id="orgc24a728"><span class="section-number-4">2.1.6</span> Laser</h4>
+
+<div class="figure">
+<p><img src="fig1/laser.png" alt="laser.png" width="500px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org3ca5227">
+<h3 id="org3ca5227"><span class="section-number-3">2.2</span> s</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/allen/Workspaces/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/allen/Workspaces/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/allen/Workspaces/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="file:///home/allen/Workspaces/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown,RevealZoom,RevealNotes],
+transition: 'concave',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+});
+</script>
+</body>
+</html>
