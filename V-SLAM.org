@@ -1,4 +1,4 @@
-#+OPTIONS: toc:2 num:nil
+#+OPTIONS: toc:1 num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 # #+REVEAL_ROOT: file:///home/allen/Workspaces/reveal.js
 #+reveal_theme: solarized
@@ -13,15 +13,16 @@
 
 ** Background
 
-+ =traditional methods= :
++ =Traditional methods= :
   - black tapes,
   - magnetic tapes,
   - QR code,
   - ...
 
-+ =new technology= :
++ =New Methods= :
   - radar,
   - visual,
+  - deep learning,
   - ...
 
 ** Objective
@@ -75,6 +76,29 @@ file:fig1/depth_figure.png
 #+attr_latex: :width 800px
 file:fig1/orb.png
 
+* ORB Feature
+
+#+attr_html: :width 800px
+#+attr_latex: :width 800px
+file:fig1/orb_feature.png
+
+#+reveal: split
+#+attr_html: :width 1000px
+#+attr_latex: :width 1000px
+file:fig1/orb_match.png
+
+* Example Results
+
+#+attr_html: :width 600px
+#+attr_latex: :width 600px
+file:fig1/stereo_all.png
+
+#+reveal: split
+
+#+attr_html: :width 1000px
+#+attr_latex: :width 1000px
+file:fig1/rgbd_map.png
+
 * April-tag
 
 #+attr_html: :width 800px
@@ -83,6 +107,7 @@ file:fig1/at.png
 
 * This Final Master Project
 
+** Project Design
 - =Hardware= :
   1) Personal Laptop for VSLAM system.
   2) Cars from team.
@@ -90,11 +115,10 @@ file:fig1/at.png
 - =Software= :
   1) Base: ORB-SLAM2.
   2) Other: apply the radar to the system.
-#+reveal: split
+** Project Design
 - =Task= :
   1) Use the =Main= AGV map the lab room.
   2) Ask the =Main= From one point to another.
   3) The =Second= AGV use april-tag follow the =Main= AGV.
 
-* Thank You Very Much
-Any Questions?
+* Q&A
