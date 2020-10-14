@@ -34,29 +34,29 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgc3cde24">Introduction</a></li>
-<li><a href="#/slide-orgc56c2f6">Visual Simultaneous Localization and Mapping</a></li>
-<li><a href="#/slide-orgb16c701">ORB-SLAM (Oriented Fast and Rotated Brief)</a></li>
-<li><a href="#/slide-org55c87ed">ORB Feature</a></li>
-<li><a href="#/slide-orgb58317e">Example Results</a></li>
-<li><a href="#/slide-org57dc531">April-tag</a></li>
-<li><a href="#/slide-org75a4a5a">This Final Master Project</a></li>
-<li><a href="#/slide-orge0073bf">Q&amp;A</a></li>
+<li><a href="#/slide-org4bcf2dc">Introduction</a></li>
+<li><a href="#/slide-orgbf95244">Visual Simultaneous Localization and Mapping</a></li>
+<li><a href="#/slide-orgf00042d">ORB-SLAM (Oriented Fast and Rotated Brief)</a></li>
+<li><a href="#/slide-org3def5a2">ORB Feature</a></li>
+<li><a href="#/slide-orgf82186d">Example Results</a></li>
+<li><a href="#/slide-orgeab31d1">April-tag</a></li>
+<li><a href="#/slide-orgc6da645">This Final Master Project</a></li>
+<li><a href="#/slide-org098aea7">Q&amp;A</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgc3cde24">
-<h2 id="orgc3cde24">Introduction</h2>
-<div class="outline-text-2" id="text-orgc3cde24">
+<section id="slide-org4bcf2dc">
+<h2 id="org4bcf2dc">Introduction</h2>
+<div class="outline-text-2" id="text-org4bcf2dc">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orge2672bb">
-<h3 id="orge2672bb">Background</h3>
+<section id="slide-orgf1f0fbf">
+<h3 id="orgf1f0fbf">Background</h3>
 <ul>
 <li><code>Traditional methods</code> :
 <ul>
@@ -81,24 +81,24 @@
 </section>
 </section>
 <section>
-<section id="slide-orgc0841da">
-<h3 id="orgc0841da">Objective</h3>
+<section id="slide-org367da97">
+<h3 id="org367da97">Objective</h3>
 <p>
-This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of tasks with other AGV.
+This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of coordinated tasks.
 </p>
 
 </section>
 </section>
 <section>
-<section id="slide-orgc56c2f6">
-<h2 id="orgc56c2f6">Visual Simultaneous Localization and Mapping</h2>
-<div class="outline-text-2" id="text-orgc56c2f6">
+<section id="slide-orgbf95244">
+<h2 id="orgbf95244">Visual Simultaneous Localization and Mapping</h2>
+<div class="outline-text-2" id="text-orgbf95244">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-org5327ec4">
-<h3 id="org5327ec4">Structure of VSLAM</h3>
+<section id="slide-org561265a">
+<h3 id="org561265a">Structure of VSLAM</h3>
 <ul>
 <li>Visual Odometry</li>
 <li>Optimization</li>
@@ -110,13 +110,13 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </section>
 </section>
 <section>
-<section id="slide-orgf903e81">
-<h3 id="orgf903e81">Type of camera</h3>
-<div class="outline-text-3" id="text-orgf903e81">
+<section id="slide-org96c9ecf">
+<h3 id="org96c9ecf">Type of camera</h3>
+<div class="outline-text-3" id="text-org96c9ecf">
 </div>
 </section>
-<section id="slide-org591b745">
-<h4 id="org591b745">monocular</h4>
+<section id="slide-org656955d">
+<h4 id="org656955d">monocular</h4>
 
 <div class="figure">
 <p><img src="fig1/monocular.png" alt="monocular.png" width="400px" />
@@ -124,8 +124,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-orga51084f">
-<h4 id="orga51084f">stereo</h4>
+<section id="slide-org3491b01">
+<h4 id="org3491b01">stereo</h4>
 
 <div class="figure">
 <p><img src="fig1/stereo.png" alt="stereo.png" width="800px" />
@@ -133,8 +133,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-org35bafdd">
-<h4 id="org35bafdd">RGB-D</h4>
+<section id="slide-org386ffb0">
+<h4 id="org386ffb0">RGB-D</h4>
 
 <div class="figure">
 <p><img src="fig1/rgbd.png" alt="rgbd.png" width="800px" />
@@ -142,8 +142,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </div>
 
 </section>
-<section id="slide-orgd0aedfe">
-<h4 id="orgd0aedfe">Depth Image</h4>
+<section id="slide-org5be4ce6">
+<h4 id="org5be4ce6">Depth Image</h4>
 
 <div class="figure">
 <p><img src="fig1/depth_figure.png" alt="depth_figure.png" width="800px" />
@@ -153,8 +153,8 @@ This project aimed to build a prototype of AGV, consisting visual and radar refe
 </section>
 </section>
 <section>
-<section id="slide-orgb16c701">
-<h2 id="orgb16c701">ORB-SLAM (Oriented Fast and Rotated Brief)</h2>
+<section id="slide-orgf00042d">
+<h2 id="orgf00042d">ORB-SLAM (Oriented Fast and Rotated Brief)</h2>
 <ul>
 <li>feature-based SLAM system.</li>
 <li>support monocular, stereo and RGBD camera.</li>
@@ -169,7 +169,7 @@ have three parallel thread: tracking, local mapping and loop closing.
 </p>
 
 </section>
-<section id="slide-org6f9aeb1-split"></li>
+<section id="slide-orge4d1c2b-split"></li>
 
 </ul>
 
@@ -181,8 +181,8 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-org55c87ed">
-<h2 id="org55c87ed">ORB Feature</h2>
+<section id="slide-org3def5a2">
+<h2 id="org3def5a2">ORB Feature</h2>
 
 <div class="figure">
 <p><img src="fig1/orb_feature.png" alt="orb_feature.png" width="800px" />
@@ -190,7 +190,7 @@ have three parallel thread: tracking, local mapping and loop closing.
 </div>
 
 </section>
-<section id="slide-org55c87ed-split">
+<section id="slide-org3def5a2-split">
 
 <div class="figure">
 <p><img src="fig1/orb_match.png" alt="orb_match.png" width="1000px" />
@@ -200,8 +200,8 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-orgb58317e">
-<h2 id="orgb58317e">Example Results</h2>
+<section id="slide-orgf82186d">
+<h2 id="orgf82186d">Example Results</h2>
 
 <div class="figure">
 <p><img src="fig1/stereo_all.png" alt="stereo_all.png" width="600px" />
@@ -209,7 +209,7 @@ have three parallel thread: tracking, local mapping and loop closing.
 </div>
 
 </section>
-<section id="slide-orgb58317e-split">
+<section id="slide-orgf82186d-split">
 
 
 <div class="figure">
@@ -220,8 +220,8 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-org57dc531">
-<h2 id="org57dc531">April-tag</h2>
+<section id="slide-orgeab31d1">
+<h2 id="orgeab31d1">April-tag</h2>
 
 <div class="figure">
 <p><img src="fig1/at.png" alt="at.png" width="800px" />
@@ -231,15 +231,15 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-org75a4a5a">
-<h2 id="org75a4a5a">This Final Master Project</h2>
-<div class="outline-text-2" id="text-org75a4a5a">
+<section id="slide-orgc6da645">
+<h2 id="orgc6da645">This Final Master Project</h2>
+<div class="outline-text-2" id="text-orgc6da645">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orge2d466e">
-<h3 id="orge2d466e">Project Design</h3>
+<section id="slide-orgb55211a">
+<h3 id="orgb55211a">Project Design</h3>
 <ul>
 <li><code>Hardware</code> :
 <ol>
@@ -259,8 +259,8 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-org6b97e4e">
-<h3 id="org6b97e4e">Project Design</h3>
+<section id="slide-org96d4154">
+<h3 id="org96d4154">Project Design</h3>
 <ul>
 <li><code>Task</code> :
 <ol>
@@ -275,8 +275,8 @@ have three parallel thread: tracking, local mapping and loop closing.
 </section>
 </section>
 <section>
-<section id="slide-orge0073bf">
-<h2 id="orge0073bf">Q&amp;A</h2>
+<section id="slide-org098aea7">
+<h2 id="org098aea7">Q&amp;A</h2>
 </section>
 </section>
 </div>

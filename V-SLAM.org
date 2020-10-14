@@ -27,7 +27,7 @@
 
 ** Objective
 
-This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of tasks with other AGV.
+This project aimed to build a prototype of AGV, consisting visual and radar reference, and to achieve a series of coordinated tasks.
 
 * Visual Simultaneous Localization and Mapping
 
